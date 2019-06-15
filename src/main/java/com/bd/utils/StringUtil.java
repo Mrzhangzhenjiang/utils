@@ -42,8 +42,8 @@ public class StringUtil {
 		}
 	}
 	public static String reverse(String teststring){
-		StringBuilder build=new StringBuilder();
-		return String.valueOf(build.append(teststring).reverse());
+		StringBuilder build=new StringBuilder(teststring);
+		return build.reverse().toString();
 	}
 	public static String reverse1(String teststring){
 		String midstring="";
